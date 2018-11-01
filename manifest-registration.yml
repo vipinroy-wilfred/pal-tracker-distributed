@@ -2,10 +2,8 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-kalyani.kanuganti.apps.pikes.pal.pivotal.io
+  - route: registration-pal-kalyani-kanuganti.apps.pikes.pal.pivotal.io
   memory: 1G
   instances: 1
-  env:
-      REGISTRATION_SERVER_ENDPOINT: http://registration-pal.apps.pikes.pal.pivotal.io
   services:
   - tracker-registration-database
