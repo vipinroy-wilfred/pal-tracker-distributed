@@ -5,6 +5,12 @@ applications:
   - route: registration-pal-vipin.apps.pikes.pal.pivotal.io
   memory: 1G
   instances: 1
-  services:
-  - tracker-registration-database
-  - tracker-service-registry
+env:
+  GRANT_TYPE: client_credentials
+  SECURITY_USER_NAME: actuator
+  SECURITY_USER_PASSWORD: operations4red
+services:
+- tracker-registration-database
+- tracker-service-registry
+- tracker-circuit-breaker-dashboard
+- tracker-sso

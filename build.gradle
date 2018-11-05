@@ -8,6 +8,7 @@ buildscript {
         springCloudVersion = "Edgware.SR4"
         springCloudServicesClientLibrariesVersion = "1.6.4.RELEASE"
         springCloudServicesVersion = "1.6.4.RELEASE"
+        springCloudSsoVersion = "2.0.0.RELEASE"
     }
 
     repositories {
