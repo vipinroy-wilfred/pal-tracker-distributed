@@ -5,10 +5,10 @@ applications:
   - route: registration-pal-vipin.apps.pikes.pal.pivotal.io
   memory: 1G
   instances: 1
-env:
-  GRANT_TYPE: client_credentials
-services:
-- tracker-registration-database
-- tracker-service-registry
-- tracker-circuit-breaker-dashboard
-- tracker-sso
+  env:
+    GRANT_TYPE: client_credentials
+  services:
+  - tracker-registration-database
+  - tracker-service-registry
+  - tracker-sso
+  - tracker-config-server
